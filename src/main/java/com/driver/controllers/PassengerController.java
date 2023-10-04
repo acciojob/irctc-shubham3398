@@ -20,4 +20,6 @@ public class PassengerController {
     public Integer registerPassenger(@RequestBody Passenger passenger){
         return passengerService.addPassenger(passenger);
     }
+
+
 }
