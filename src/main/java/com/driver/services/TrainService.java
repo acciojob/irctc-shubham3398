@@ -65,10 +65,10 @@ public class TrainService {
 
             //get the list of booked ticket
             List<Ticket> bookedTicket = train.getBookedTickets();
-            int[] passCount = new int[train.getRoute().length()];
+            int[] passCount = new int[train.getRoute().split(",").length];
 
-            int srcIndex = -1;
-            int destIndex = -1;
+            int srcIndex = 0;
+            int destIndex = 0;
 
             int seatAvail = train.getNoOfSeats();
             int totalSeatAvail = seatAvail;
