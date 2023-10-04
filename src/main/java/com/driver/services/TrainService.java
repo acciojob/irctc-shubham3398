@@ -40,6 +40,7 @@ public class TrainService {
 
         train.setDepartureTime(trainEntryDto.getDepartureTime());
         train.setNoOfSeats(trainEntryDto.getNoOfSeats());
+        train.setBookedTickets(new ArrayList<>());
 
         //save this train to dataBase
         Train savedTrain = trainRepository.save(train);
